@@ -2159,4 +2159,26 @@ displayNotices();
 </script>
 
 </body>
+    <!-- FIREBASE CONFIGURATION -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+import { getStorage } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-storage.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBEsGSFDWzTxAfWKU3BJh8IEwK5tBfc_1U",
+  authDomain: "kolavalloor-west-lp-school.firebaseapp.com",
+  projectId: "kolavalloor-west-lp-school",
+  storageBucket: "kolavalloor-west-lp-school.firebasestorage.app",
+  messagingSenderId: "328702295189",
+  appId: "1:328702295189:web:3ce51cb3c54ab5d5e92f9c",
+  measurementId: "G-6YM5MZ3983"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const storage = getStorage(app);
+</script>
 </html>
